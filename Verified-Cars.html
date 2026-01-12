@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link rel="stylesheet" href="Verified-Cars.css">
+</head>
+<body>
+
+     <!-- STICKY HEADER -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">🛡️ ZimSafe<span>Auto</span></a>
+            </div>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="Security.html">Security</a>
+                <a href="Verified-Cars.html">Verified Cars</a>
+                <a href="services.html">Services</a>
+                <a href="diaspora.html">Diaspora</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn">🌙</button>
+                <div class="auth-buttons">
+                    <a href="#" class="btn-text">Login</a>
+                    <a href="#" class="btn-primary">Sell Car</a>
+                </div>
+                <!-- Mobile Toggle -->
+            </div>
+        </div>
+    </header>
+    <!-- Is code ko purane header ke niche se continue karein -->
+
+<!-- 1. HERO SECTION WITH ADVANCED SEARCH -->
+<section class="hero-section">
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <span class="vetted-badge">🛡️ Roy's Security Verified</span>
+            <h1>Buy or Sell Vetted Cars in <span class="highlight">Zimbabwe.</span></h1>
+            <p>Every listing is manually audited for ID authenticity and logbook ownership. No scams, no fake sellers.</p>
+            
+            <div class="hero-stats hide-mobile">
+                <div class="stat-item"><strong>1.5k+</strong><span>Verified Cars</span></div>
+                <div class="stat-item"><strong>100%</strong><span>ID Checked</span></div>
+            </div>
+        </div>
+
+        <!-- BE FORWARD STYLE SEARCH BOX -->
+        <div class="advanced-search-card">
+            <div class="search-tabs">
+                <button class="tab-btn active">Find a Car</button>
+                <button class="tab-btn">Rent a Car</button>
+            </div>
+            <form class="search-form">
+                <div class="input-grid">
+                    <div class="form-group">
+                        <label>Make</label>
+                        <select><option>Toyota</option><option>Mazda</option><option>Honda</option></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Max Price (USD)</label>
+                        <input type="number" placeholder="e.g. 15000">
+                    </div>
+                    <div class="form-group">
+                        <label>Transmission</label>
+                        <select><option>Automatic</option><option>Manual</option></select>
+                    </div>
+                </div>
+                <button type="submit" class="btn-search">Search Inventory</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- 2. TRUST PILLARS (The Security Foundation) -->
+<section class="trust-pillars">
+    <div class="container pillar-grid">
+        <div class="pillar">
+            <div class="icon">🆔</div>
+            <h3>Seller Verification</h3>
+            <p>Every seller must upload a Government ID before listing.</p>
+        </div>
+        <div class="pillar">
+            <div class="icon">📄</div>
+            <h3>Logbook Audit</h3>
+            <p>Ownership papers are cross-checked with official records.</p>
+        </div>
+        <div class="pillar">
+            <div class="icon">🛡️</div>
+            <h3>Safe Meeting Zones</h3>
+            <p>Meetings happen at security-verified hubs in major cities.</p>
+        </div>
+        <div class="pillar">
+            <div class="icon">🌍</div>
+            <h3>Diaspora Escrow</h3>
+            <p>Secure payments for buyers in Canada, UK, and SA.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 3. INVENTORY GRID -->
+<section class="inventory-section" id="inventory">
+    <div class="container">
+        <div class="section-header">
+            <h2>Featured Verified Inventory</h2>
+            <div class="sort-options">
+                <select id="sortCars">
+                    <option>Newest Listed</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- CAR GRID -->
+        <div class="car-grid" id="carGrid">
+            <!-- Example Card 1 -->
+            <article class="car-card">
+                <div class="verified-tag">✓ VERIFIED SELLER</div>
+                <div class="car-img-wrapper">
+                    <img src="https://via.placeholder.com/400x250" alt="Toyota GD6">
+                </div>
+                <div class="car-details">
+                    <h3 class="car-title">2021 Toyota Hilux GD-6</h3>
+                    <p class="car-loc">📍 Harare • 45,000km</p>
+                    <div class="car-specs">
+                        <span>⛽ Diesel</span>
+                        <span>⚙️ Auto</span>
+                        <span>🚙 2.8L</span>
+                    </div>
+                    <div class="price-action">
+                        <span class="price-usd">$35,500</span>
+                        <button class="btn-view">View Details</button>
+                    </div>
+                </div>
+            </article>
+            <!-- Repeat for more cards -->
+        </div>
+    </div>
+</section>
+
+<!-- 4. DIASPORA PORTAL SECTION -->
+<section class="diaspora-banner">
+    <div class="container diaspora-flex">
+        <div class="diaspora-text">
+            <h2>Buying for family in Zim from Canada or UK?</h2>
+            <p>We act as your eyes on the ground. We inspect, verify documents, and deliver the car to your relatives safely.</p>
+            <a href="#" class="btn-outline">Learn About Diaspora Service</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col about">
+                <div class="logo">🛡️ ZimSafe<span>Auto</span></div>
+                <p>A specialized marketplace designed to eliminate automotive fraud in Zimbabwe. Managed by Roy's Security & Private Investigations.</p>
+                <div class="socials">
+                    <a href="#">FB</a> <a href="#">IG</a> <a href="#">WA</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Browse Inventory</a></li>
+                    <li><a href="#">Hire a Mechanic</a></li>
+                    <li><a href="#">Towing Services</a></li>
+                    <li><a href="#">Diaspora Portal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Diaspora Support</h4>
+                <p>UK: +44 000 000</p>
+                <p>Canada: +1 000 000</p>
+                <p>SA: +27 000 000</p>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Security Terms</a></li>
+                    <li><a href="#">Admin Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ZimSafeAuto. Private Investigation Agency License #4402.</p>
+        </div>
+    </footer>
+
+      <script src="Verified-Cars.js"></script>
+</body>
+</html>

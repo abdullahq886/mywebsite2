@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ZimSafeAuto - Zimbabwe's Secure Car Marketplace</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- STICKY HEADER -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="home.html">🛡️ ZimSafe<span>Auto</span></a>
+            </div>
+            
+
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="home.html" class="active">Home</a>
+                <a href="Security.html">Security</a>
+                <a href="Verified-Cars.html">Verified Cars</a>
+                <a href="services.html">Services</a>
+                <a href="diaspora.html">Diaspora</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn">🌙</button>
+                
+                <div class="auth-buttons">
+                    <a href="#" class="btn-text">Login</a>
+                    <a href="#" class="btn-primary">Sell Car</a>
+                </div>
+                <!-- Mobile Toggle -->
+            </div>
+        </div>
+    </header>
+
+    <main id="home">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="badge">Verified by Roy's Security Team</span>
+                    <h1>Buy Your Next Car with <span class="highlight">Total Peace of Mind.</span></h1>
+                    <p>Zimbabwe's only marketplace where every seller is ID-verified and every logbook is checked by private investigators.</p>
+                    <div class="hero-stats">
+                        <div class="stat-box"><strong>1k+</strong><span>Cars</span></div>
+                        <div class="stat-box"><strong>500+</strong><span>Verified Sellers</span></div>
+                        <div class="stat-box"><strong>100%</strong><span>Safe</span></div>
+                    </div>
+                </div>
+
+                <!-- SEARCH COMPONENT (BE FORWARD STYLE) -->
+                <div class="search-card">
+                    <div class="search-header">
+                        <button class="tab active">Buy</button>
+                        <button class="tab">Rent</button>
+                    </div>
+                    <form class="search-form">
+                        <div class="field">
+                            <label>Make</label>
+                            <select><option>Select Make</option><option>Toyota</option><option>Nissan</option></select>
+                        </div>
+                        <div class="field">
+                            <label>Price Range (USD)</label>
+                            <select><option>Any Price</option><option>$0 - $5,000</option><option>$5,000+</option></select>
+                        </div>
+                        <div class="field">
+                            <label>City</label>
+                            <select><option>Harare</option><option>Bulawayo</option></select>
+                        </div>
+                        <button type="submit" class="btn-search">Search Inventory</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUST PILLARS -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Why ZimSafeAuto is Different</h2>
+                    <p>We solve the problems of Facebook Marketplace scams.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="f-card">
+                        <div class="f-icon">🆔</div>
+                        <h3>ID Verification</h3>
+                        <p>We check every seller's National ID before they can list.</p>
+                    </div>
+                    <div class="f-card">
+                        <div class="f-icon">📄</div>
+                        <h3>Logbook Audit</h3>
+                        <p>Our team verifies registration books with official records.</p>
+                    </div>
+                    <div class="f-card">
+                        <div class="f-icon">🛡️</div>
+                        <h3>Safe Meeting Zones</h3>
+                        <p>Meet at our security-monitored points for safe viewing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LISTINGS SECTION -->
+        <section class="listings" id="listings">
+            <div class="container">
+                <div class="list-header">
+                    <h2>Featured Verified Listings</h2>
+                    <a href="#" class="link">View All Listings →</a>
+                </div>
+                <div class="car-grid">
+                    <!-- Example Car -->
+                    <div class="car-card">
+                        <div class="car-tag">Verified</div>
+                        <div class="car-img" style="background-image: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=500&q=60')"></div>
+                        <div class="car-info">
+                            <h3>2018 Toyota Hilux GD6</h3>
+                            <p class="price">$32,500</p>
+                            <p class="loc">📍 Harare • Diesel • Manual</p>
+                            <div class="card-action">
+                                <button class="btn-outline">Details</button>
+                                <button class="btn-primary-sm">Book Test Drive</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Professional Services</h2>
+                </div>
+                <div class="service-grid">
+                    <div class="s-card">
+                        <h3>Mechanic Inspection</h3>
+                        <p>Don't buy a lemon. Get a pro mechanic report.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="s-card">
+                        <h3>Towing & Recovery</h3>
+                        <p>Stuck? We provide 24/7 roadside assistance.</p>
+                        <a href="#">Call Support</a>
+                    </div>
+                    <div class="s-card">
+                        <h3>Car Rentals</h3>
+                        <p>Verified rental fleet for business or travel.</p>
+                        <a href="#">Browse Fleet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact" id="contact">
+            <div class="container contact-wrapper">
+                <div class="contact-text">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about a listing or our security process? Roy's team is here to help.</p>
+                    <div class="contact-details">
+                        <p>📧 support@zimsafeauto.com</p>
+                        <p>📞 +263 770 000 000</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="How can we help you?" rows="5"></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- PROFESSIONAL FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col about">
+                <div class="logo">🛡️ ZimSafe<span>Auto</span></div>
+                <p>The safest marketplace for cars in Zimbabwe. Built on trust, security, and verification.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Security</a></li>
+                    <li><a href="#listings">Inventory</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Diaspora</h4>
+                <ul>
+                    <li><a href="#">Canada Support</a></li>
+                    <li><a href="#">UK Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ZimSafeAuto. Private Investigation License #4402.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

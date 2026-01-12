@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZimSafeAuto | Zimbabwe's Most Secure Car Marketplace</title>
+    <link rel="stylesheet" href="Security.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <!-- STICKY HEADER -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">🛡️ ZimSafe<span>Auto</span></a>
+            </div>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="Security.html">Security</a>
+                <a href="Verified-Cars.html">Verified Cars</a>
+                <a href="services.html">Services</a>
+                <a href="diaspora.html">Diaspora</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn">🌙</button>
+                <div class="auth-buttons">
+                    <a href="#" class="btn-text">Login</a>
+                    <a href="#" class="btn-primary">Sell Car</a>
+                </div>
+                <!-- Mobile Toggle -->
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO / BREADCRUMBS -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Verified Vehicle Inventory</h1>
+            <p>Every car listed here has passed a manual ID and document audit by Roy's Security Team.</p>
+        </div>
+    </section>
+
+    <!-- INVENTORY SECTION -->
+    <main class="container inventory-layout">
+        
+        <!-- ENHANCED FILTERS -->
+        <aside class="filter-sidebar" id="sidebar">
+            <div class="filter-box">
+                <h3>Quick Filters</h3>
+                <form id="filterForm">
+                    <div class="filter-group">
+                        <label>Vehicle Condition</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" checked> Zim-Used</label>
+                            <label><input type="checkbox"> Ex-Japan</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Price Range (USD)</label>
+                        <input type="range" min="2000" max="80000" step="1000" id="priceRange" value="40000">
+                        <div class="range-labels"><span>$2k</span><span id="priceVal">$40,000</span></div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Make & Model</label>
+                        <select id="makeFilter">
+                            <option value="all">All Makes</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="mazda">Mazda</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="honda">Honda</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Transmission</label>
+                        <select>
+                            <option>Any</option>
+                            <option>Automatic</option>
+                            <option>Manual</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn-reset" id="resetBtn">Clear All Filters</button>
+                </form>
+            </div>
+
+            <!-- SECURITY PROOF CARD -->
+            <div class="security-card-sidebar">
+                <h4>Why ZimSafeAuto?</h4>
+                <ul>
+                    <li>✅ Seller ID Verified</li>
+                    <li>✅ Logbook Authenticated</li>
+                    <li>✅ Police Clearance Checked</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENT AREA -->
+        <section class="content-area">
+            <div class="top-controls">
+                <div class="results-info">
+                    <span id="matchCount">0</span> Verified Matches
+                </div>
+                <div class="sort-box">
+                    <select id="sortSelect">
+                        <option value="newest">Newest Listed</option>
+                        <option value="priceLow">Price: Low to High</option>
+                        <option value="priceHigh">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="car-grid" id="carGrid">
+                <!-- JavaScript will inject detailed cards here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- TRUST COMPARISON SECTION -->
+    <section class="comparison-section" id="security-audit">
+        <div class="container">
+            <h2 class="section-title">Facebook Marketplace vs. ZimSafeAuto</h2>
+            <div class="table-wrapper">
+                <table class="trust-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Facebook</th>
+                            <th>ZimSafeAuto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Seller Identity Check</td>
+                            <td class="red">❌ None</td>
+                            <td class="green">✅ Manual ID Check</td>
+                        </tr>
+                        <tr>
+                            <td>Vehicle Ownership Check</td>
+                            <td class="red">❌ None</td>
+                            <td class="green">✅ Logbook Verified</td>
+                        </tr>
+                        <tr>
+                            <td>Secure Meeting Zones</td>
+                            <td class="red">❌ Risky</td>
+                            <td class="green">✅ CCTV Guarded Locations</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col about">
+                <div class="logo">🛡️ ZimSafe<span>Auto</span></div>
+                <p>A specialized marketplace designed to eliminate automotive fraud in Zimbabwe. Managed by Roy's Security & Private Investigations.</p>
+                <div class="socials">
+                    <a href="#">FB</a> <a href="#">IG</a> <a href="#">WA</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Browse Inventory</a></li>
+                    <li><a href="#">Hire a Mechanic</a></li>
+                    <li><a href="#">Towing Services</a></li>
+                    <li><a href="#">Diaspora Portal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Diaspora Support</h4>
+                <p>UK: +44 000 000</p>
+                <p>Canada: +1 000 000</p>
+                <p>SA: +27 000 000</p>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Security Terms</a></li>
+                    <li><a href="#">Admin Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ZimSafeAuto. Private Investigation Agency License #4402.</p>
+        </div>
+    </footer>
+
+    <script src="Security.js"></script>
+</body>
+</html>
